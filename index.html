@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WELCOME TO GFRESH</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#panel1").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+});
+
+
+
+</script>
+<style> 
+#panel, #flip {
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.7rem;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+#panel1, #flip1 {
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.7rem;
+}
+
+#panel1 {
+  padding: 50px;
+  display: none;
+}
+#panel2, #flip2 {
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.7rem;
+}
+
+#panel2 {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> Gfresh </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+    </nav>
+
+    <div class="icons">
+     <div class="fas fa-bars" id="menu-btn"></div>
+     <a href="cart.html" class="btn ripple" target="blank"> <i class="fa fa-shopping-cart"></i> <span class="label"> <span>0</span> </span> <i class="fa-solid fa-cart-shopping"></i> </a>  
+     <a href="welcome.php" class="btn ripple" target="blank"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+ 
+     <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span class="price">25/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">25/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : 50/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div> 
+
+    <form action="login.html" class="login-form">
+           <input type="submit" value="login now" class="btn">
+          <p>Don't have an account? <br><span> Create one</span></p>
+        <input type="submit" value="signup now" class="btn">
+    </form>
+
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Health is <span>Wealth</span></h3>
+        <p>Get your best discounts here !!!!</p>
+        <a href="#categories" class="btn">shop now</a>
+    </div>
+
+</section>
+
+
+
+
+<section class="features" id="features">
+
+        <h1 class="heading"><span>Features</span> </h1>
+    
+        <div class="box-container">
+
+        <div class="box" style="overflow-y: scroll;">
+            <img src="image/feature-img-1.jpg" alt="">
+            <h3>Fresh</h3>
+            <p>We deliver fresh items</p>
+            <div id="panel">Fresh vegetables are an essential part of a healthy and balanced diet. They provide our bodies with important nutrients such as vitamins, minerals, fiber, and antioxidants that help keep us healthy and prevent chronic diseases.</div>
+            <div id="flip"> <a class="btn" >Read more</a></div>
+            
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.jpg" alt="">
+            <h3>Fast Delivery</h3>
+            <p>Knock Knock !!!</p>
+            <div id="panel1">At our grocery website, we understand the importance of fast and efficient delivery. That's why we've implemented processes and technologies to ensure that your orders are delivered to your doorstep as quickly as possible.
+
+            </div>
+            <div id="flip1"> <a class="btn" >Read more</a></div>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.jpg" alt="">
+            <h3>Easy Payments</h3>
+            <p> Just a click is more than enough</p>
+            <div id="panel2">We offer a variety of payment options to fit your needs, including credit cards, debit cards, and online payment platforms. Our payment gateway is secure and uses the latest encryption technologies to keep your information safe.</div>
+            <div id="flip2"> <a class="btn" >read more</a></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"><span>Categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.png" alt="">
+            <h3>vegetables</h3>
+            <p>upto 10% off</p>
+            <a href="vegetables1.html" target="_blank" class="btn">Shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.jpg" alt="">
+            <h3>Fruits</h3>
+            <p>upto 15% off</p>
+            <a href="fruits1.html" target="_blank" class="btn">Shop now</a>
+        </div>
+
+
+    </div>
+
+
+
+</section>
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> <span>Review</span> </h1>
+    
+    
+            <div class="box-container"> 
+    
+                <div class=" box">
+                    <img src="image/pic-1.jpg" alt="">
+                    <p>Product from here ,strengthens my ultra instinct power.</p>
+                    <h3>Goku</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="image/pic-2.jpg" alt="">
+                    <p>This is a heaven website</p>
+                    <h3>Vegeta</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="image/pic-3.png" alt="">
+                    <p>There is a dark energy in this website</p>
+                    <h3>Swapnil </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>Blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by legend Swapnil</a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1 Jan, 2022 </a>
+                </div>
+                <h3>Wonderful website</h3>
+                <p>This website is designed to make it easy for us to find and purchase the items we need.  we can browse by category and view detailed descriptions and images for each product. They also offer a variety of payment options and fast shipping to ensure that you receive your order as quickly as possible.  In addition to offering a wide selection of fresh produce, we also provide tips and recipes on our website to help you make the most out of your vegetables and fruits.</p>
+              
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by legend Swapnil </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1 Jan, 2022 </a>
+                </div>
+                <h3>Fresh Products</h3>
+                <p>We work directly with local farmers and suppliers to ensure that all of our products are fresh, seasonal, and sustainably sourced. Our commitment to quality and freshness means that you can trust that the vegetables and fruits you receive from us will be delicious, nutritious, and safe for you and your family.</p>
+              
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by legend Swapnil </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st Jan, 2022 </a>
+                </div>
+                <h3>Service</h3>
+                <p> We're committed to providing you with the highest level of customer service, and we're always happy to answer any questions or concerns you may have. Whether you're looking for a healthy snack or ingredients for your next recipe, we've got you covered.</p>
+            
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Gfresh <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Welcome to our online grocery shop, where you can find everything you need for your weekly grocery shopping without leaving your home. </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9123456789 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9123456789 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> Gfresh@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Bangalore, India -562107</a>
+        </div>
+
+        <div class="box">
+            <form action="" method="POST">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <input type="text" placeholder="Name" class="name">
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="submit" value="Subscribe" class="btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </form>
+           
+        </div>
+
+    </div>
+
+    <iframe src="https://www.google.com/maps/place/The+Oxford+College+of+Engineering/@12.901685,77.6287308,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae149559f2e353:0xacb3790271972f97!8m2!3d12.9016798!4d77.6313057!16s%2Fm%2F02qjn_0" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="store.js"></script>
+</body>
+</html>

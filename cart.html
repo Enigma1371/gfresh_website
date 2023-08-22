@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/stylecart.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+
+  
+</head>
+
+
+ <header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> Gfresh </a>
+
+     <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">features</a> 
+         <a href="index.html">Categories</a>
+        <a href="index.html">review</a>
+        <a href="index.html">blogs</a>
+    </nav> 
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div> 
+         <a href="index.html" class="btn ripple" target="blank"> <i class="fa fa-shopping-cart"></i> <span class="label"> <span>0</span> </span> <i class="fa-solid fa-cart-shopping"></i>  </a> 
+         <a href="welcome.php" class="btn ripple" target="blank"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> 
+     
+</header>
+
+<body>
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3><span></span> Continue shopping</h3>
+            <p>The best site ever</p>
+            <a href="index.html" class="btn">shop now</a>
+        </div>
+    
+    </section>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price1 sm-hide">PRICE</h5>
+            <h5 class="quantity" style="padding-left: 10px
+            ;" >QUANTITY</h5>
+            <h5 class="total" >TOTAL</h5>
+    </div>
+        <div class="products1"></div>
+    </div>
+        
+       <div class="making-center"> 
+       <div id="made-center">
+        <a href=" "  id="button1" class="btn">Proceed to Checkout</a> 
+       </div>
+
+       <div class="making-center"> 
+        <div class="made-center">
+         <a href="index.html" id="button2" class="btn">Back to Shopping</a> 
+        </div> 
+        </div>
+    
+<script src="store.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script>
+ function generatePDF() {
+        const element = document.getElementById('invoice');
+        html2pdf()
+            .from(element)
+            .save();
+
+    }
+
+</script>
+
+</body>
+</html>
+
+

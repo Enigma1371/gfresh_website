@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete your order</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+  
+</head>
+<body>
+   <style>
+      body {
+        background-image: url('C:\xampp\htdocs\wad\img\sweetcorn.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <div class="container">
+
+        <section class="checkout-form">
+        
+           <h1 class="heading">Complete your order</h1>
+        
+           <form action="connect.php" method="POST">
+
+              <div class="flex">
+                 <div class="inputBox">
+                    <span class="label">Name</span>
+                    <input type="text" placeholder=" " name="name" class="input" required>
+                   
+                 </div>
+                 <div class="inputBox">
+                    <span class="label">Mobile No.</span>
+                    <input type="number" placeholder=" " name="number"  class="input" required>
+                 </div>
+                 <div class="inputBox">
+                    <span class="label"> E-mail</span>
+                    <input type="email" placeholder=" " name="email"  class="input"  required>
+                 </div>
+                 <div class="inputBox">
+                    <span class="label">Payment</span>
+                    <select  class="input"
+                    name="method">
+                    <option value="select" selected>select..</option>
+                       <option value="cash on delivery">cash on delivery</option>
+                       <option value="credit card">credit card</option>
+                       <option value="paypal">paypal</option>
+                    </select>
+                 </div>
+                 <div class="inputBox">
+                    <span class="label">Address line 1</span>
+                    <input type="text" placeholder=" " name="address1"  class="input"  required>
+                 </div>
+                  <div class="inputBox">
+                    <span class="label">Address line 2</span>
+                    <input type="text" placeholder=" " name="address2"  class="input" required>
+                 </div> 
+                 <div class="inputBox">
+                    <span class="label">Pin code</span>
+                    <input type="text" placeholder=" " name="pin_code"  class="input" required>
+                 </div>
+                
+                 <br>
+                  <input  type="submit" value="Order now" name="order_btn" class="btn"> 
+              <br>
+              <br>
+              
+              </div>
+           </form>
+        
+        </section>
+        </div>
+</body>
+</html>

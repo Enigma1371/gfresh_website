@@ -1,0 +1,142 @@
+
+ body{
+  background: rgb(172, 245, 245) !important;
+} 
+.products-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.products-container ion-icon {
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgray;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+  font-size: 15px;
+}
+
+.price1 {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.ppp {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.ppp ion-icon {
+  cursor: pointer;
+  padding-right: 0px;
+  
+}
+
+.products1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products1 img {
+  width: 55px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  border:.2rem solid var(--blue);
+  color:var(--blue);
+  cursor: pointer;
+  background: none;
+  margin-bottom: 0%;
+  align-items: center;
+}
+.making-center
+{
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}
+.btn:hover{
+  background: var(--orange);
+  color:#fff;
+}
+
+@media(max-width: 500px) {
+  nav h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;;
+  }
+
+  .sm-hide {
+      display: none;;
+  }
+
+  .products1,
+  .product-header {
+      justify-content: center;
+  }
+
+  .basketTotalContainer {
+      padding-right: 8%;
+  }
+}
